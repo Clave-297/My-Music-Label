@@ -1,10 +1,26 @@
 <header>
     <div class="header-content">
         <div class="header-content-inner">
-            <h1>Your Favorite Source of Free Bootstrap Themes</h1>
-            <hr>
-            <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
+            <h1>{{ site.title }}</h1>
+            <p>{{ site.description }}</p>
             <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+            <ul class="social-media">
+                {% if site.twitter_username %}
+                <li><a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">Twitter</a></li>
+                {% endif %}
+                {% if site.facebook_username %}
+                <li><a href="https://facebook.com/{{ site.facebook_username }}" target="_blank">Facebook</a></li>
+                {% endif %}
+                {% if site.instagram_username %}
+                <li><a href="https://instagram.com/{{ site.instagram_username }}" target="_blank">Instagram</a></li>
+                {% endif %}
+                {% if site.linkedin_username %}
+                <li><a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">LinkedIn</a></li>
+                {% endif %}
+                {% if site.youtube_username %}
+                <li><a href="https://youtube.com/{{ site.youtube_username }}" target="_blank">YouTube</a></li>
+                {% endif %}
+            </ul>
         </div>
     </div>
 </header>
