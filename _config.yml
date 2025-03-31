@@ -1,12 +1,27 @@
 # Site settings
-title:
-email:
+title: Unlocked Records 
+email: clavecroes@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
+  A website that will serve as the main online hub for a music production brand and music label. The Website is modern, oriented around music studios, with audio broadcasting, file sharing, transaction and music albums cover capabilities.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+url: "https://clave-297.github.io/My-Music-Label" # the base hostname & protocol for your site
 
-twitter_username:
-github_username:
+twitter_username: UnlockedRecord
+github_username: Clave-297
+facebook_username: clavebeatz
+instagram_username: prod_clave
+youtube_username: clavebeatz
 
 # Build settings
 markdown: kramdown
+theme: minima # specify the theme
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Pagination settings (if you have a blog)
+paginate: 5
+paginate_path: "/page:num/"
+
+# Permalink style
+permalink: pretty
